@@ -1,90 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - KeaBatho's Fast Food</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - KeaBatho's Fast Food</title>
+  <link rel="stylesheet" href="../Css/styles.css">
 </head>
 <body>
-    <header>
-        <!--Logo-->
-        <img src="../Assets/LOGO.png" alt="KeaBatho's Fast Food Logo" width="150" height="100" ><br/>
-        <!--Navigation-->
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="services.html">Services</a>
-            <a href="product.html">Product</a>
-            <a href="enquiry.html">Enquiry</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-    </header>
-    <main>
-        <h1>Contact Us</h1>
-        <p>We'd love to hear from you! Find our locations and get in touch using the form below.</p>
+  <!-- Header & Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../Assets/LOGO.png" alt="KeaBatho's Fast Food Logo">
+      </div>
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../Pages/about.html">About</a>
+        <a href="../Pages/services.html">Services</a>
+        <a href="../Pages/product.html">Product</a>
+        <a href="../Pages/enquiry.html">Enquiry</a>
+        <a href="../Pages/contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-         <!-- Contact Information -->
-    <section>
-        <h2>Contact Information</h2>
-        <table>
-            <tr>
-                <td width="100">Telephone Number:</td>
-                <td>(011)-564-1123</td>
-            </tr>
-             <tr>
-                <td width="100">First Address:</td>
-                <td>17A Genl Joubert Street&nbsp;Polokwane;&nbsp;0700</td>
-            </tr>
-            <tr>
-                <td width="100">Second Address:</td>
-                <td>5 Boekenhout Street&nbsp; Mbombela;&nbsp; 1211</td>
-            </tr>
-             <tr>
-                <td width="100">Email Address:</td>
-                <td><a href="mailto:info@keabathosfastfood.co.za">Email Us</a></td>
-            </tr>
-        </table>
+  <!-- Main Content -->
+  <main>
+    <!-- Intro -->
+    <section class="intro">
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you! Find our locations and get in touch using the form below.</p>
     </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info">
+      <h2>Contact Information</h2>
+      <div class="info-grid">
+        <div><strong>Telephone:</strong> (011)-564-1123</div>
+        <div><strong>Address 1:</strong> 17A Genl Joubert Street, Polokwane, 0700</div>
+        <div><strong>Address 2:</strong> 5 Boekenhout Street, Mbombela, 1211</div>
+        <div><strong>Email:</strong> 
+          <a href="mailto:info@keabathosfastfood.co.za">info@keabathosfastfood.co.za</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Locations -->
+    <section class="locations">
+      <h2>Our Locations</h2>
+      <div class="map-container">
+        <div class="map">
+          <h3>Main Branch</h3>
+          <p>17A Genl Joubert Street, Polokwane, South Africa</p>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.2152136342374!2d29.449679874992608!3d-23.917432074769533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6d788adad90d3%3A0xee6b887a33c0351!2s17A%20Genl%20Joubert%20St%2C%20Polokwane%20Central%2C%20Polokwane%2C%200700!5e0!3m2!1sen!2sza!4v1756181219448!5m2!1sen!2sza" 
+            allowfullscreen 
+            loading="lazy">
+          </iframe>
+        </div>
+        <div class="map">
+          <h3>Second Branch</h3>
+          <p>5 Boekenhout Street, Mbombela, South Africa</p>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.8118921476557!2d30.968343575054!3d-25.47795593479015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee84a12ef898ba3%3A0xafb66fd0d0abcdf9!2s5%20Boekenhout%20St%2C%20West%20Acres%2C%20Mbombela%2C%201211!5e0!3m2!1sen!2sza!4v1756181657066!5m2!1sen!2sza" 
+            allowfullscreen 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-section">
+      <h2>Send Us a Message</h2>
+      <form action="" method="post" class="contact-form">
+        <label for="name">Name:</label>
+        <input 
+          type="text" 
+          id="name" 
+          name="name" 
+          placeholder="Enter your name" 
+          required
+        >
+
+        <label for="email">Email:</label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="Enter your email" 
+          required
+        >
+
+        <label for="message">Message:</label>
+        <textarea 
+          id="message" 
+          name="message" 
+          rows="5" 
+          placeholder="Write your message here..." 
+          required>
+        </textarea>
         
-    <!-- Locations and Maps -->
-    <section>
-        <h2>Our Locations</h2>
-
-        <h3>Main Branch</h3>
-        <p>17A Genl Joubert Street, Polokwane, South Africa</p>
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.2152136342374!2d29.449679874992608!3d-23.917432074769533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6d788adad90d3%3A0xee6b887a33c0351!2s17A%20Genl%20Joubert%20St%2C%20Polokwane%20Central%2C%20Polokwane%2C%200700!5e0!3m2!1sen!2sza!4v1756181219448!5m2!1sen!2sza" 
-         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-
-        <h3>Second Branch</h3>
-        <p>5 Boekenhout Street, Mbombela, South Africa</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.8118921476557!2d30.968343575054!3d-25.47795593479015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee84a12ef898ba3%3A0xafb66fd0d0abcdf9!2s5%20Boekenhout%20St%2C%20West%20Acres%2C%20Mbombela%2C%201211!5e0!3m2!1sen!2sza!4v1756181657066!5m2!1sen!2sza"
-         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <button type="submit">Send Message</button>
+      </form>
     </section>
-        <section>
-            <h1>Contact Form:</h1>
-            <form action="" method="post"></form><br/>
-             <tr>
-                <td width="100">Name:</td>
-                <td><input type="text" name="name" placeholder="Enter your name" required></td><br/>
-            </tr>
-             <tr>
-                <td width="100">Email:</td>
-                <td><input type="email" name="email" placeholder="Enter your email" required></td><br/>
-            </tr>
-             <tr>
-                <td>Message:</td><br/>
-                <td>
-                    <textarea rows="5" cols="25" required></textarea><br/>
-                </td>
-            </tr>
-            <input type="submit" value="submit" required><br/>
-        </section>
-    </main>
-    <!--Footer-->
-    <footer>
-        <p style="text-align: center;">&copy; 2025 KeaBatho's Fast Food</p>
-    </footer> 
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 KeaBatho's Fast Food</p>
+  </footer>
 </body>
 </html>
