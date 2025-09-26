@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KeaBatho's Fast Food - Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KeaBatho's Fast Food</title>
+  <link rel="stylesheet" href="./Css/styles.css">
 </head>
 <body>
-   <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keabatho's Fast Food</title>
-</head>
-<body>
-    <!--Logo-->
-    <img src="./Assets/LOGO.png" alt="KeaBatho's Fast Food Logo" width="150" height="100" ><br/>
-    
-    <!--Navigation-->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="./Pages/about.html">About Us</a>
-         <a href="./Pages/services.html">Services</a>
-         <a href="./Pages/product.html">Product</a>
-         <a href="./Pages/enquiry.html">Enquiry</a>
-         <a href="./Pages/contact.html">Contact Us</a>
-    </nav>
-    <header>
-        <main>
-           <!--Brief Introduction-->
-            <h1 style="color: coral; text-align: center;">Welcome to KeaBatho's Fast Food</h1>
-            <section>
-                <p style="text-transform: capitalize; font-weight: bold;">At KeaBatho's Fast Food, we pride ourselves 
-                    on serving fresh, tasty, and affordable meals that keep our customers coming back for more. 
-                    Our menu features a variety of fast-food favorites including juicy burgers, crispy fried chicken, 
-                    golden fries, and refreshing drinks. 
-                    We aim to provide quick service without compromising quality, 
-                    whether you're dining in or taking away. 
-                    At KeaBatho's Fast Food, we make every meal fast, flavorful, and satisfying.
-                </p>
-            </section>
-            
-            <!--Image-->
-            <section>
-                <img src="./Assets/IMAGE.jpg" alt="My image" width="100%" height="100%">
-            </section>
-            
-            <!--Call to Action-->
-            <section>
-                 <a href="./Pages/product.html">View Our Menu</a>
-            </section>
-            
-            
-            <!-- Call to Action -->
-            <section>
-                <h2>Order Now</h2>
-                <p>Hungry? Don't wait! Click below to place your order and enjoy your meal.</p>
-                <a href="./Pages/enquiry.html">Make an Enquiry</a>
-            </section>
-        </main>
-          <!--Footer-->
-         <footer>
-            <p style="text-align: center;">&copy; 2025 KeaBatho's Fast Food</p>
-          </footer>   
-    </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./Assets/LOGO.png" alt="KeaBatho's Fast Food Logo">
+    </div>
+    <div class="nav-links">
+      <a href="./index.html">Home</a>
+      <a href="./Pages/about.html">About</a>
+      <a href="./Pages/services.html">Services</a>
+      <a href="./Pages/product.html">Product</a>
+      <a href="./Pages/enquiry.html">Enquiry</a>
+      <a href="./Pages/contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <main>
+      <!-- Brief Introduction -->
+      <h1>Welcome to KeaBatho's Fast Food</h1>
+      <div class="responsive-text">
+        <p>
+          At KeaBatho's Fast Food, we pride ourselves 
+          on serving fresh, tasty, and affordable meals that keep our customers coming back for more. 
+          Our menu features a variety of fast-food favorites including juicy burgers, crispy fried chicken, 
+          golden fries, and refreshing drinks. 
+          We aim to provide quick service without compromising quality, 
+          whether you're dining in or taking away. 
+          At KeaBatho's Fast Food, we make every meal fast, flavorful, and satisfying.
+        </p>
+      </div>
+
+      <!-- Image -->
+      <section>
+        <img src="./Assets/IMAGE.jpg" alt="My image">
+      </section>
+
+      <!-- Call to Action: View Menu -->
+      <section class="cta-section">
+        <h2>Discover Our Delicious Meals</h2>
+        <p>Explore our menu packed with fresh, tasty, and affordable fast-food favorites.</p>
+        <a href="./Pages/product.html" class="btn btn-secondary">View Our Menu</a>
+      </section>
+
+      <!-- Call to Action: Order Now -->
+      <section class="cta-section highlight">
+        <h2>Order Now</h2>
+        <p>Hungry? Don't wait! Place your order today and enjoy fast, flavorful meals.</p>
+        <a href="./Pages/enquiry.html" class="btn btn-primary">Make an Enquiry</a>
+      </section>
+    </main>
+  </header>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 KeaBatho's Fast Food. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
