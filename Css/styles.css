@@ -1,0 +1,462 @@
+/* ==============================
+   BASIC RESET
+============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: url('../Assets/bg-food.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  color: #f35e4a; /* primary accent color */
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+/* Section padding */
+section {
+  margin-bottom: 2.5rem;
+  padding: 2rem 1rem;
+}
+
+/* Utility classes */
+.text-center { text-align: center; }
+.flex-center { display: flex; justify-content: center; align-items: center; }
+.grid-responsive {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* ==============================
+   NAVBAR
+============================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 1rem 5%;
+  border-bottom: 2px solid #f35e4a;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-radius: 12px 12px 0 0;
+}
+
+.navbar .logo img {
+  height: 60px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  font-weight: bold;
+  color: #333;
+}
+
+.nav-links a:hover {
+  color: #ff6600;
+}
+
+/* ==============================
+   HERO SECTION
+============================== */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  font-size: 40px;
+  color: #fff;
+  background: rgba(0,0,0,0.4);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+/* ==============================
+   BUTTONS
+============================== */
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  background: #f35e4a;
+  color: white;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: transform 0.2s ease, background 0.2s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #ffbc6b;
+  transform: scale(1.05);
+}
+
+/* Optional secondary button */
+.btn-secondary {
+  background: #333;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: #000;
+}
+
+/* ==============================
+   CTA SECTION
+============================== */
+.cta-section {
+  text-align: center;
+  padding: 60px 20px;
+  margin: 40px auto;
+  background: #f9f9f9;
+  border-radius: 10px;
+  max-width: 800px;
+}
+
+.cta-section.highlight {
+  background: #ffe5e5;
+}
+
+/* ==============================
+   CONTACT / ENQUIRY FORMS
+============================== */
+.form-container, .contact-form {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.form-container h2, .contact-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.form-container label, .contact-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #444;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container select,
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.form-container input:focus,
+.form-container textarea:focus,
+.form-container select:focus,
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  border-color: #ff6600;
+  outline: none;
+  box-shadow: 0 0 6px rgba(255,102,0,0.3);
+}
+
+.form-container button,
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  background: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-container button:hover,
+.contact-form button:hover {
+  background: #e65c00;
+}
+
+/* ==============================
+   MENU / PRODUCT SECTION
+============================== */
+.menu-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fff8f0;
+  border-radius: 12px;
+}
+
+.menu-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #f4511e;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs input[type="radio"] { display: none; }
+
+.tabs label {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: #fce5d0;
+  border-radius: 5px 5px 0 0;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tabs label:hover {
+  background-color: #f4511e;
+  color: white;
+}
+
+.tab-content { display: none; }
+
+#tab-combo-deals:checked ~ #content-combo-deals,
+#tab-burgers:checked ~ #content-burgers,
+#tab-sides:checked ~ #content-sides,
+#tab-drinks:checked ~ #content-drinks {
+  display: block;
+}
+
+/* Menu Grid */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.menu-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.menu-item h3 { color: #f4511e; margin: 15px 0 10px; }
+.menu-item p { color: #555; font-size: 14px; margin-bottom: 10px; }
+.menu-item .price { font-weight: bold; color: #333; margin-bottom: 15px; }
+.menu-item button { background-color: #f4511e; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; transition: background-color 0.3s; }
+.menu-item button:hover { background-color: #ff7f50; }
+
+/* ==============================
+   ABOUT / STAFF / SERVICES
+============================== */
+/* About Us section layout */
+.section.grid {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap; /* keeps it responsive */
+}
+
+.section.grid.reverse {
+  flex-direction: row-reverse; /* image on right, text on left */
+}
+
+.img-container img.about-img {
+  width: 400px; /* fixed width to keep same size */
+  height: auto; /* maintains aspect ratio */
+  border-radius: 10px;
+}
+
+.text-container {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 768px) {
+  .section.grid,
+  .section.grid.reverse {
+    flex-direction: column;
+  }
+  .img-container img.about-img {
+    width: 100%; /* scales down for mobile */
+    max-width: 400px; /* max width remains same as desktop */
+  }
+}
+
+
+.staff-container, .service-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 40px 20px;
+}
+
+.staff-members, .service-box div {
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.staff-members:hover, .service-box img:hover {
+  transform: scale(1.03);
+}
+
+.staff-members img, .service-box img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ==============================
+   CONTACT INFO / MAPS
+============================== */
+.contact-section, .contact-info, .locations, .map {
+  background-color: #fff8f0;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.info-grid, .map-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.map-container .map {
+  padding: 15px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.map-container .map:hover { transform: translateY(-5px); }
+
+.map iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* ==============================
+   TABLES
+============================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+table th {
+  background: #f35e4a;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ==============================
+   DETAILS / FAQ
+============================== */
+details {
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  background: #fff3e6;
+  border-radius: 12px;
+  transition: background 0.3s ease;
+}
+
+details:hover { background: #ffe0c6; }
+
+/* ==============================
+   FOOTER
+============================== */
+footer {
+  background: rgba(243, 94, 74, 0.9);
+  padding: 1rem;
+  text-align: center;
+  border-top: 2px solid #e74c3c;
+  margin-top: 2rem;
+  border-radius: 0 0 12px 12px;
+}
+
+/* ==============================
+   RESPONSIVE MEDIA QUERIES
+============================== */
+@media (max-width: 1024px) {
+  .grid, .reverse { flex-direction: column; }
+  .staff-container, .menu-grid, .service-box { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+}
+
+@media (max-width: 768px) {
+  .nav-links { flex-wrap: wrap; justify-content: center; gap: 15px; }
+  .form-container, .contact-form { width: 95%; padding: 20px; }
+  .hero-text { font-size: 28px; bottom: 20px; left: 10px; padding: 8px 16px; }
+}
