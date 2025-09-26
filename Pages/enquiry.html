@@ -1,82 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiry - KeaBatho's Fast Food</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiry - KeaBatho's Fast Food</title>
+  <link rel="stylesheet" href="../Css/styles.css">
 </head>
 <body>
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiry - Keabatho's Fast Food</title>
-</head>
-<body>
-    <header>
-   <!--Logo-->
-    <img src="../Assets/LOGO.png" alt="KeaBatho's Fast Food Logo" width="150" height="100" ><br/>
-    <!--Navigation-->
-    <nav>
-       <a href="../index.html">Home</a>
-       <a href="about.html">About Us</a>
-       <a href="services.html">Services</a>
-       <a href="product.html">Product</a>
-       <a href="enquiry.html">Enquiry</a>
-       <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>
-   
-    <!-- Page Header -->
-    <header>
-        <h1>Enquiry Form</h1>
-        <p>Please complete the form below to enquire about our products, services, or ways to support us.</p>
-    </header>
 
-    <!-- Enquiry Form -->
-    <section>
-        <form action="" method="post">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../Assets/LOGO.png" alt="KeaBatho's Fast Food Logo">
+    </div>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../Pages/about.html">About</a>
+      <a href="../Pages/services.html">Services</a>
+      <a href="../Pages/product.html">Product</a>
+      <a href="../Pages/enquiry.html" class="active">Enquiry</a>
+      <a href="../Pages/contact.html">Contact</a>
+    </div>
+  </nav>
 
-            <!-- Personal Info -->
-            <label for="name">Full Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br></br>
-            <label for="email">Email Address:</label><br>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
-            <label for="phone">Phone Number:</label><br>
-            <input type="tel" id="phone" name="phone" placeholder="e.g.076 123 4567" required><br><br>
-            <p>Choose your gender:</p>
-            <form action="">
-                <input type="radio" id="male" name="male" value="male">
-                <label for="male">Male</label><br>
-                <input type="radio" id="female" name="female" value="female">
-                <label for="female">Female</label><br>
-                <input type="radio" id="prefer not to say" name="prefer not to say" value="prefer not to say">
-                <label for="prefer not to say">Prefer not to say</label><br><br>
-            </form> 
+  <!-- Enquiry Section -->
+  <section class="menu-section">
+    <h2>Send Us an Enquiry</h2>
 
-            <!-- Type of Enquiry -->
-            <label for="enquiry-type">Type of Enquiry:</label><br>
-            <select id="enquiry-type" name="enquiry-type" required>
-                <option value="">-- Please Select --</option>
-                <option value="product">Product Enquiry</option>
-                <option value="service">Service Enquiry</option>
-                <option value="volunteer">Volunteer</option>
-                <option value="sponsor">Sponsor</option>
-            </select><br><br>
+    <div class="menu-grid">
+      <div class="menu-card"> <!-- mimic product card look -->
+        <div class="form-container">
+          <form action="#" method="post">
+            
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
-            <!-- Message -->
-            <label for="message">Your Message:</label><br>
-            <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-            <!-- Submit Button -->
-            <button type="submit">Submit Enquiry</button>
-        </form>
-    </section>
-    <!-- Footer -->
-    <footer>
-        <p style="text-align: center;">&copy; 2025 KeaBatho's Fast Food</p>
-    </footer>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+              <option value="">--Select a subject--</option>
+              <option value="product">Product Enquiry</option>
+              <option value="service">Service Enquiry</option>
+              <option value="feedback">Feedback</option>
+              <option value="support">Customer Support</option>
+            </select>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+            <button type="submit" class="btn">Submit Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 KeaBatho's Fast Food. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
-
