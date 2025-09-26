@@ -1,109 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Services • KeaBatho's Fast Food</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeaBatho's Fast Food Menu</title>
+    <link rel="stylesheet" href="../Css/styles.css">
 </head>
 <body>
-   <header>
-   <!--Logo-->
-    <img src="../Assets/LOGO.png" alt="KeaBatho's Fast Food Logo" width="150" height="100" ><br/>
-    <!--Navigation-->
-    <nav>
-       <a href="../index.html">Home</a>
-       <a href="about.html">About Us</a>
-       <a href="services.html">Services</a>
-       <a href="product.html">Product</a>
-       <a href="enquiry.html">Enquiry</a>
-       <a href="contact.html">Contact Us</a> 
-      </nav>
-  </header>
-
-    <!-- Page Header -->
-    <h1>Keabatho's Fast Food Menu</h1>
-    <p>Welcome to our delicious menu! Choose from a variety of fast food favorites.</p>
-
-     <!-- Services / Products List -->
-    <section>
+      <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../Assets/LOGO.png" alt="KeaBatho's Fast Food Logo">
+    </div>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../Pages/about.html">About</a>
+      <a href="../Pages/services.html">Services</a>
+      <a href="../Pages/product.html">Product</a>
+      <a href="../Pages/enquiry.html">Enquiry</a>
+      <a href="../Pages/contact.html">Contact</a>
+    </div>
+  </nav>
+    <!-- Menu Section -->
+    <section class="menu-section">
         <h2>Our Menu</h2>
 
-        <article>
-            <h3>Burgers</h3>
-            <p>Juicy beef, chicken, and veggie burgers made with fresh ingredients and served with love.</p>
-        </article>
+        <!-- Category Tabs -->
+        <div class="tabs">
+            <input type="radio" name="tab-group" id="tab-combo-deals">
+            <label for="tab-combo-deals">Combo Deals</label>
+            
+            <input type="radio" name="tab-group" id="tab-burgers" checked>
+            <label for="tab-burgers">Burgers</label>
 
-        <article>
-            <h3>Fries & Sides</h3>
-            <p>Crispy golden fries, onion rings, and other tasty sides to complete your meal.</p>
-        </article>
+            <input type="radio" name="tab-group" id="tab-sides">
+            <label for="tab-sides">Sides</label>
 
-        <article>
-            <h3>Drinks</h3>
-            <p>Refreshing soft drinks, milkshakes, and fresh juices to quench your thirst.</p>
-        </article>
+            <input type="radio" name="tab-group" id="tab-drinks">
+            <label for="tab-drinks">Drinks</label>
 
-        <article>
-            <h3>Special Combos</h3>
-            <p>Value meal combos that give you the perfect balance of taste and price.</p>
-        </article>
+            <!-- Tab Content -->
+            <div class="tab-content" id="content-combo-deals">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="../Assets/Classic Burger Combo.jpg" alt="CheeseBurger">
+                        <h3>Classic Burger Combo</h3>
+                        <span class="price">R79</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Burger Buddy.jpg" alt="Burger Buddy">
+                        <h3>Burger Buddy</h3>
+                        <span class="price">R65</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Chicken Strip Box.jpg" alt="Chicken Strip Box">
+                        <h3>Chicken Strip Box</h3>
+                        <span class="price">R89</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Family Fest.png" alt="FAmily fest">
+                        <h3>Family Fest</h3>
+                        <span class="price">R199</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Family Night.jpg" alt="FAmily Night">
+                        <h3>Family Night</h3>
+                        <span class="price">R169</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Student Saver.jpg" alt="Student Saver">
+                        <h3>Student Saver</h3>
+                        <span class="price">R59</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Wing Wednesday.jpg" alt="Wing Wednesday">
+                        <h3>Wing Wednesday</h3>
+                        <span class="price">R99</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="content-burgers">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="../Assets/dakota-classic-cheeseburger-list-938ab2b4.jpg" alt="CheeseBurger">
+                        <h3>Cheeseburger</h3>
+                        <p>Juicy beef patty, lettuce, tomato, cheese.</p>
+                        <span class="price">R45</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/beef burger.jpg" alt="Hamburger">
+                        <h3>Hamburger</h3>
+                        <p>Beef patty with double cheese and fresh toppings.</p>
+                        <span class="price">R30</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Chicken Burger.jpg" alt="Chickenburger">
+                        <h3>Chickenburger</h3>
+                        <p>Beef patty with double cheese and fresh toppings.</p>
+                        <span class="price">R66</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/black-bean-sweet-potato-veggie-burgers-1x1-1.jpg" alt="Veggie burger">
+                        <h3>Veggie Burger</h3>
+                        <p>Beef patty with double cheese and fresh toppings.</p>
+                        <span class="price">R76</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="content-sides">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="../Assets/Fries.jpg" alt="Fries">
+                        <h3>French Fries</h3>
+                        <p>Crispy golden fries with a touch of salt.</p>
+                        <span class="price">R26</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Wings.jpg" alt="Chicken Wings">
+                        <h3>Spicy Wings</h3>
+                        <p>Hot wings with signature sauce.</p>
+                        <span class="price">R97</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Coleslaw.jpg" alt="Coleslaw">
+                        <h3>Coleslaw</h3>
+                        <p>Fresh shredded cabbage with tangy dressing.</p>
+                        <span class="price">R35</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Green salad.jpg" alt="Green Salad">
+                        <h3>Green Salad</h3>
+                        <p>Fresh greens with a light vinaigrette.</p>
+                        <span class="price">R38</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Fish fingers.jpg" alt="Fish Fingers">
+                        <h3>Fish Fingers</h3>
+                        <p>Crispy fish fingers with tartar dip.</p>
+                        <span class="price">R31</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tab-content" id="content-drinks">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="../Assets/Still water.webp" alt="Still Water">
+                        <h3>Still Water 500ml</h3>
+                        <p>Refreshing soda to complete your meal.</p>
+                        <span class="price">R12</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Sparkling Water.webp" alt="Sparkling Water">
+                        <h3>Sparkling Water 500ml</h3>
+                        <p>Freshly squeezed juice.</p>
+                        <span class="price">R18</span>
+                    </div>
+                     <div class="menu-item">
+                        <img src="../Assets/Juice.jpg" alt="Juice">
+                        <h3>Fruit Juice</h3>
+                        <p>Freshly squeezed juice.</p>
+                        <span class="price">R29</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Mojito.webp" alt="Mojito">
+                        <h3>Mojito</h3>
+                        <p>A fresh, sparkling cocktail with mint, lime and rum, 
+                            perfect for a refreshing drink.</p>
+                        <span class="price">R56</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Espresso Martini.png" alt="Expresso Martin">
+                        <h3>Expresso Martin</h3>
+                        <p>Energizing cocktail made with vodka, espresso coffee, 
+                            coffee liqueur, and cane sugar.Perfect for lovers of 
+                            caffeinated and bold beverages.</p>
+                        <span class="price">R67</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Cape Codder.png" alt="Cape Codder">
+                        <h3>Cape Codder</h3>
+                        <p>Simple and refreshing cocktail made with vodka and cranberry juice.
+                            Perfect for lovers of fruity and light beverages.</p>
+                        <span class="price">R89</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Sazerac.png" alt="Sazerac">
+                        <h3>Sazerac</h3>
+                        <p>Classic cocktail made with rye whiskey, absinthe, sugar, and bitters. 
+                            Perfect for lovers of strong and aromatic beverages.</p>
+                        <span class="price">R101</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Miami Vice.png" alt="Miami Vice">
+                        <h3>Miami Vice</h3>
+                        <p>Tropical cocktail made with rum, strawberries, pineapple, and coconut. 
+                            Perfect for sunny days.</p>
+                        <span class="price">R211</span>
+                        </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Coke.png" alt="Coke">
+                        <h3>Coca Cola 300ml</h3>
+                        <p>Refreshing soda to complete your meal.</p>
+                        <span class="price">R17</span>
+                    </div>
+                      <div class="menu-item">
+                        <img src="../Assets/Diet Coke.jpg" alt="Diet Coke">
+                        <h3>Diet Coke 300ml</h3>
+                        <p>Refreshing soda to complete your meal.</p>
+                        <span class="price">R20</span>
+                    </div>
+                      <div class="menu-item">
+                        <img src="../Assets/dr-pepper-strawberries-cream-355ml-210303.webp" alt="Dr Pepper">
+                        <h3>Dr Pepper 335ml</h3>
+                        <p>Refreshing soda to complete your meal.</p>
+                        <span class="price">R26</span>
+                    </div>
+                      <div class="menu-item">
+                        <img src="../Assets/Creme soda.png" alt="Creme Soda">
+                        <h3>Creme Soda 300ml</h3>
+                        <p>Refreshing soda to complete your meal.</p>
+                        <span class="price">R17</span>
+                    </div>
+                      <div class="menu-item">
+                        <img src="../Assets/fanta-orange-300ml-1.webp" alt="Fanta Orange">
+                        <h3>Fanta Orange 300ml</h3>
+                        <p>Refreshing soda to complete your meal.</p>
+                        <span class="price">R17</span>
+                    </div>
+                      <div class="menu-item">
+                        <img src="../Assets/Kirks.jpg" alt="Kirks">
+                        <h3>Kirks 375ml</h3>
+                        <p>Refreshing soda to complete your meal.</p>
+                        <span class="price">R30</span>
+                    </div>
+                      <div class="menu-item">
+                        <img src="../Assets/Pepsi.jpg" alt="Pepsi">
+                        <h3>Pepsi 500ml</h3>
+                        <p>Refreshing soda to complete your meal.</p>
+                        <span class="price">R39</span>
+                    </div>
+                      <div class="menu-item">
+                        <img src="../Assets/Schweppes.jpg" alt="Schweppes">
+                        <h3>Schweppes 300ml</h3>
+                        <p>Refreshing soda to complete your meal.</p>
+                        <span class="price">R18</span>
+                    </div>
+                      <div class="menu-item">
+                        <img src="../Assets/Sparberry.jpg" alt="Sparberry">
+                        <h3>Sparberry 300ml</h3>
+                        <p>Refreshing soda to complete your meal.</p>
+                        <span class="price">R17</span>
+                    </div>
+                      <div class="menu-item">
+                        <img src="../Assets/Sprite_300ml.jpg" alt="Sprite">
+                        <h3>Sprite 300ml </h3>
+                        <p>Refreshing soda to complete your meal.</p>
+                        <span class="price">R17</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Twist1.png" alt="Lemon Twist">
+                        <h3>Lemon Twist 300ml </h3>
+                        <p>Refreshing soda to complete your meal.</p>
+                        <span class="price">R17</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Twist.png" alt="Twist">
+                        <h3>Granadilla 300ml </h3>
+                        <p>Refreshing soda to complete your meal.</p>
+                        <span class="price">R17</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Stoney.jpg" alt="Stoney">
+                        <h3>Stoney 300ml </h3>
+                        <p>Refreshing soda to complete your meal.</p>
+                        <span class="price">R17</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Sunkist_Soda_Orange_flavour_(Hong_Kong_version).jpg" alt="Sunkist drink">
+                        <h3>Sunkist </h3>
+                        <p>Refreshing soda to complete your meal.</p>
+                        <span class="price">R25</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Chocolate Milkshake1.png" alt="Chocolate Milkshake">
+                        <h3>Chocolate Milkshake</h3>
+                        <p>A sweet, cold beverage made by blending milk, chocolate syrup,
+                             and ice cream until smooth and thick with oreos</p>
+                        <span class="price">R70</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Coffe Milkshake.jpg" alt="Coffe Milkshake">
+                        <h3>Coffe Milkshake</h3>
+                        <p>A blended, creamy beverage with a rich coffee flavor, 
+                            perfect for a caffeinated treat. </p>
+                        <span class="price">R61</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/cookies-and-cream-milkshake-14.jpg" alt="cookies-and-cream-milkshake">
+                        <h3>cookies and cream milkshake</h3>
+                        <p>A rich, creamy, and indulgent treat made with vanilla ice cream
+                             and chocolate sandwich cookies. </p>
+                        <span class="price">R123</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Cool mint milkshake.jpg" alt="Cool mint milkshake">
+                        <h3>Cool Mint Milkshake</h3>
+                        <p>Vanilla ice cream and peppermint extract for a clean, refreshing flavor. </p>
+                        <span class="price">R56</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Creamsicle Milkshake Shots.webp" alt="Creamsicle Milkshake Shots">
+                        <h3>Creamsicle Milkshake Shots </h3>
+                        <p> A dessert-cocktail hybrid that combines the nostalgic orange 
+                            and vanilla flavor of a classic creamsicle in a boozy, miniature form.</p>
+                        <span class="price">R90</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/dairy-free-banana-peanut-butter-shake-2.jpg" alt="Banana Milkshake">
+                        <h3>Banana Milkshake </h3>
+                        <p>A classic, creamy drink made by blending bananas with milk and ice cream.</p>
+                        <span class="price">R35</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/chick-fil-a-strawberry-milkshake-feature-1-500x500.jpg" alt="Strawberry Milkshake">
+                        <h3>Strawberry Milkshake </h3>
+                        <p>This fruity milkshake features fresh or frozen strawberries 
+                            blended with vanilla or strawberry ice cream and milk.</p>
+                        <span class="price">R48</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/S'mores milkshake.jpg" alt="S'mores Milkshake">
+                        <h3>S'mores Milkshake </h3>
+                        <p>This milkshake captures the flavors of the classic campfire treat 
+                            by blending chocolate and marshmallow flavors, often with crushed graham crackers.</p>
+                        <span class="price">R145</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/salted-caramel-milkshake-image-683x1024.webp" alt="Salted caramel-milkshake">
+                        <h3>Salted Caramel Milkshake </h3>
+                        <p>This decadent shake combines vanilla ice cream with rich caramel sauce 
+                            and a pinch of sea salt to create a sweet and salty flavor profile.</p>
+                        <span class="price">R67</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../Assets/Sundae_Vanilla-960x640.jpg" alt="Sundae Vanilla Milkshake">
+                        <h3>Sundae Vanilla Milkshake </h3>
+                        <p> Blended texture of a vanilla milkshake with
+                             the decadent toppings of a classic sundae. </p>
+                        <span class="price">R87</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Footer -->
     
-    <section>
-      <h2>Pricing</h2>
-      <table border="9" >
-      <tr>
-         <th>Item</th>
-         <th>Includes</th>
-         <th>Price</th>
-      </tr>
-     <tr>
-         <td>Classic Burger Combo</td>
-         <td>Burger + Fries + Drink</td>
-         <td>R79</td>
-      </tr>
-      <tr>
-         <td>Chicken Strip Box</td>
-         <td>6 Strips + Fries + Dip</td>
-         <td>R89</td>
-      </tr>
-      <tr>
-         <td>Family Fest</td>
-         <td>2 Burgers + 6 wings + Fries + 1L Drink</td>
-         <td>R199</td>
-      </tr>
-      <tr>
-         <td>Student Saver</td>
-         <td>Cheese Burger + Small Fries</td>
-         <td>R59</td>
-      </tr>
-      <tr>
-         <td>Burger Buddy</td>
-         <td>Cheese burger + Medium fries + 330ml Drink</td>
-         <td>R69</td>
-      </tr>
-      <tr>
-         <td>Wing Wednesday</td>
-         <td> 10 Wings + Large Fries + 2 Dips</td>
-         <td>R99</td>
-      </tr>
-      <tr>
-         <td>Family Night</td>
-         <td>8 pc Chicken + Family Chips + Colesaw + 1.5L Drink</td>
-         <td>R199</td>
-      </tr>
-   </table>
-      <p><strong>Student Deal (Mon-Fri, 11:00-15:00):</strong> Show student card for 10% off any meal.</p>     
-    </section>
-    <section id="order">
-      <h2>Ready to Order?</h2>
-      <p>Call us at <strong>+27 00 000 0000</strong> or email <strong>orders@keabathofoods.com</strong>.</p>
-      <a href="tel:+27000000000" class="btn"></a>
-    </section>
-  </main>
- <!--Footer-->
   <footer>
-     <p style="text-align: center;">&copy; 2025 KeaBatho's Fast Food</p>
-  </footer>  
+    <p>&copy; 2025 KeaBatho's Fast Food</p>
+  </footer>
 </body>
 </html>
+
