@@ -145,4 +145,24 @@ v1.1.0 – Latest Update (2025-09-26)
 
 
     REFERENCES
+    Ocean5Strategies 8 Technical Elements of Website Design and Development | Ocean 5 Strategies
+    (Accessed 07 August 2025)
     
+    The IIE. 2012.Web Development (Introduction) (WEDE5020 Module Manual). The Independent
+    Institute of Education: Unpublished.
+    
+    Nulab 16 timeline examples (plus tips) | Nulab (Accessed 06 August 2025)
+    
+    BoomDevs What Are the Technical Requirements for a Website? - BoomDevs LLC (Accessed 06
+    August 2025)
+    
+    W3Schools https://www.w3schools.com/html/html_attributes.asp( Accessed 20 August
+    2025)
+    W3C. (2024).HTML5 Specification. https://html.spec.whatwg.org/multipage/( Accessed 12
+    August 2025)
+
+    W3School https://www.w3schools.com/css/default.asp accessed 23 September 2025
+
+     W3Schools. (2025, September 12). W3Schools. Retrieved from W3Schools: https://www.w3schools.com/cssref/pr_class_cursor.php
+
+    Schools, W. (2025, September 16). W3 SCHOOLS. Retrieved from W3 SCHOOLS: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
