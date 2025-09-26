@@ -4,149 +4,133 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KeaBatho's Fast Food — Our Services</title>
-  
+  <link rel="stylesheet" href="../Css/styles.css">
 </head>
 <body>
-  <header>
-   <!--Logo-->
-    <img src="../Assets/LOGO.png" alt="KeaBatho's Fast Food Logo" width="150" height="100" ><br/>
-    <!--Navigation-->
-    <nav>
-       <a href="../index.html">Home</a>
-       <a href="about.html">About Us</a>
-       <a href="services.html">Services</a>
-       <a href="product.html">Product</a>
-       <a href="enquiry.html">Enquiry</a>
-       <a href="contact.html">Contact Us</a>
-      </nav>
-  </header>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../Assets/LOGO.png" alt="KeaBatho's Fast Food Logo">
+    </div>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../Pages/about.html">About</a>
+      <a href="../Pages/services.html">Services</a>
+      <a href="../Pages/product.html">Product</a>
+      <a href="../Pages/enquiry.html">Enquiry</a>
+      <a href="../Pages/contact.html">Contact</a>
+    </div>
+  </nav>
 
-    <header>
-    <!--QUICK LINKS / TABLE OF CONTENTS -->
-    <aside aria-label="Quick links">
-      <h2>Jump to a section</h2>
-        <ul>
-          <li><a href="#dine-in-takeaway">Dine-In & Takeaway</a></li>
-          <li><a href="#combos">Specials & Combos</a></li>
-          <li><a href="#hours">Operating Hours</a></li>
-          <li><a href="#ordering">How to Order</a></li>
-          <li><a href="#faqs">FAQs</a></li>
-        </ul>
-    </aside>
-  </header>
-    <header>
-      <!--Pager Header-->
-        <h1>Our Services</h1>
-        <p>Explore our delicious meals and services designed to satisfy your cravings.</p>
-    </header>
-    <main>
-      <section>
-      <!--DINE-IN & TAKEAWAY-->
-      <section id="dine-in-takeaway" aria-labelledby="dine-title">
-      <h2 id="dine-title">Dine-In & Takeaway</h2>
-      <article>
-        <h3>Dine-In</h3>
+  <!-- Main Content -->
+  <main>
+    <h1>Our Services</h1>
+    <p>Explore our delicious meals and services designed to satisfy your cravings.</p>
+
+    <!-- Dine-In & Takeaway -->
+    <section id="dine-in-takeaway">
+      <h2>Dine-In & Takeaway</h2>
+
+      <div class="service-box">
+        <img src="../Assets/DINE IN.png" alt="Dine in at KeaBatho's Fast Food">
+        <div>
+          <h3>Dine-In</h3>
           <p>Relax and enjoy your meal at our welcoming store. Perfect for family lunches, study breaks, or quick meetups.</p>
-        <figure>
-            <img src="../Assets/dine.png" alt="Customers enjoying meals inside KeaBatho's Fast Food" width="60%" height="90%"></br>
-             <figcaption>Comfortable seating for quick bites or unhurried meals.</figcaption>
-        </figure>
-        <ul>
-          <li>Full menu available</li>
-          <li>Child-friendly options</li>
-          <li>Accessible seating on request</li>
-        </ul>
-      </article>
-      <article>
-        <h3>Takeaway</h3>
-          <p>Order at the counter or by phone and pick up in minutes.</p>
-        <ul>
-          <li>Pre-order by phone or WhatsApp</li>
-          <li>Hot and fresh packaging</li>
-          <li>Queue-skip for call-ahead orders</li>
-        </ul>
-      </article>
+        </div>
+      </div>
+
+        <div>
+          <h3>Takeaway</h3>
+          <p>Order at the counter or by phone and pick up in minutes with fresh, hot packaging.</p>
+        </div>
     </section>
 
-    <!--SPECIALS & COMBOS-->
-    <section id="combos" aria-labelledby="combos-title">
-      <h2 id="combos-title">Weekly Specials & Combos</h2>
-        <p>Great value bundles updated every Monday.</p>
-        <p><strong>Student Deal (Mon-Fri, 11:00-15:00):</strong> Show student card for 10% off any meal.</p>
+    <!-- Specials & Combos -->
+    <section id="combos">
+      <h2>Weekly Specials & Combos</h2>
+      <div class="service-box">
+        <img src="../Assets/Burger Buddy.jpg" alt="Combo meals special">
+        <div>
+          <p>Great value bundles updated every Monday.</p>
+          <p><strong>Student Deal (Mon-Fri, 11:00-15:00):</strong> Show student card for 10% off any meal.</p>
+        </div>
+      </div>
     </section>
 
-    <!--OPERATING HOURS-->
-    <section id="hours" aria-labelledby="hours-title">
-      <h2 id="hours-title">Operating Hours</h2>
-      <table border="1" cellpadding="8" cellspacing="0" summary="Operating hours by day">
-        <thead>
-          <tr>
-            <th scope="col">Day</th>
-            <th scope="col">Hours</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Monday</td><td>10:00 - 22:00</td></tr>
-          <tr><td>Tuesday</td><td>10:00 - 22:00</td></tr>
-          <tr><td>Wednesday</td><td>10:00 - 22:00</td></tr>
-          <tr><td>Thursday</td><td>10:00 - 22:00</td></tr>
-          <tr><td>Friday</td><td>10:00 - 23:00</td></tr>
-          <tr><td>Saturday</td><td>10:00 - 23:00</td></tr>
-          <tr><td>Sunday</td><td>11:00 - 21:00</td></tr>
-        </tbody>
-      </table>
-      <p><em>Public holidays may differ—please call to confirm.</em></p>
-    </section>
-
-    <!-- HOW TO ORDER -->
-    <section id="ordering" aria-labelledby="order-title">
-      <h2 id="order-title">How to Order</h2>
-      <ol>
-        <li>Browse our <a href="product.html">menu</a> or the combos above.</li>
-        <li>Choose dine-in or takeaway.</li>
-        <li>Order at the counter, call/WhatsApp, or use our <a href="enquiry.html">enquiry form</a>.</li>
-        <li>Pay by cash, card, or EFT (send proof).</li>
-        <li>Collect or dine_in—enjoy!</li>
-      </ol>
-        <p><strong>Phone/WhatsApp:</strong> 071-000-0000</p>
-    </section>
-
-    <!--FAQs-->
-    <section id="faqs" aria-labelledby="faqs-title">
-      <h2 id="faqs-title">Frequently Asked Questions</h2>
-
-      <!-- <details> gives you built-in expand/collapse -->
-      <details>
-        <summary>Do you have vegetarian options?</summary>
-        <p>Yes—veggie burgers, chips, salads, and custom bowls. Ask for meat-free gravy and separate prep.</p>
-      </details>
-
-      <details>
-        <summary>Are your products Halaal-friendly?</summary>
-        <p>We source from Halaal-certified suppliers where possible and avoid cross-contamination. Please ask if you have specific requirements.</p>
-      </details>
-
-      <details>
-        <summary>Can I pre-order for a specific time?</summary>
-        <p>Yes. Place your order at least 30 minutes in advance and tell us your collection time.</p>
-      </details>
-
+    <!-- Operating Hours -->
+    <section id="hours">
+      <h2>Operating Hours</h2> 
+        <div>
+          <table summary="Operating hours by day">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Hours</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Monday</td><td>10:00 - 22:00</td></tr>
+              <tr><td>Tuesday</td><td>10:00 - 22:00</td></tr>
+              <tr><td>Wednesday</td><td>10:00 - 22:00</td></tr>
+              <tr><td>Thursday</td><td>10:00 - 22:00</td></tr>
+              <tr><td>Friday</td><td>10:00 - 23:00</td></tr>
+              <tr><td>Saturday</td><td>10:00 - 23:00</td></tr>
+              <tr><td>Sunday</td><td>11:00 - 21:00</td></tr>
+            </tbody>
+          </table>
+          <p><em>Public holidays may differ—please call to confirm.</em></p>
+        </div>
       
     </section>
 
-  </section>
-      <section id="order">
+    <!-- How to Order -->
+    <section id="ordering">
+      <h2>How to Order</h2>
+      
+        <img src="../Assets/customer ordering food.jpg" alt="Customer ordering food">
+        <div>
+          <ol>
+            <li>Browse our <a href="product.html">menu</a> or the combos above.</li>
+            <li>Choose dine-in or takeaway.</li>
+            <li>Order at the counter, call/WhatsApp, or use our <a href="enquiry.html">enquiry form</a>.</li>
+            <li>Pay by cash, card, or EFT (send proof).</li>
+            <li>Collect or dine-in—enjoy!</li>
+          </ol>
+          <p><strong>Phone/WhatsApp:</strong> 071-000-0000</p>
+        </div>
+     
+    </section>
+
+    <!-- FAQs -->
+    <section id="faqs">
+      <h2>Frequently Asked Questions</h2>
+        <div>
+          <details>
+            <summary>Do you have vegetarian options?</summary>
+            <p>Yes—veggie burgers, chips, salads, and custom bowls. Ask for meat-free gravy and separate prep.</p>
+          </details>
+          <details>
+            <summary>Are your products Halaal-friendly?</summary>
+            <p>We source from Halaal-certified suppliers where possible and avoid cross-contamination. Please ask if you have specific requirements.</p>
+          </details>
+          <details>
+            <summary>Can I pre-order for a specific time?</summary>
+            <p>Yes. Place your order at least 30 minutes in advance and tell us your collection time.</p>
+          </details>
+        </div>
+    </section>
+
+    <!-- Ready to Order -->
+    <section id="order">
       <h2>Ready to Order?</h2>
-        <p>Call us at <strong>+27 00 000 0000</strong> or email <strong>orders@keabathofoods.com</strong>.</p>
-        <a href="tel:+27000000000" class="btn"></a>
+      <p>Call us at <strong>+27 89 321 6789</strong> or email <strong>orders@keabathofoods.com</strong>.</p>
+      <a href="tel:+27 89 321 6789" class="btn">Call Now</a>
     </section>
   </main>
+
+  <!-- Footer -->
   <footer>
-      <p style="text-align: center;">&copy; 2025 KeaBatho's Fast Food</p>
-  </footer>  
+    <p>&copy; 2025 KeaBatho's Fast Food</p>
+  </footer>
 </body>
 </html>
-
-
-   
-      
