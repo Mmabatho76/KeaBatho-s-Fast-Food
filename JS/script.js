@@ -324,3 +324,135 @@ function validateContactForm() {
 
     return false; // Prevent actual form submission
 }
+
+
+
+
+
+
+
+
+//--menu---
+const menu = {
+    combo: [{name: "Family Combo", price: 25},{name: "Double Burger Combo", price: 15}],
+    burgers: [{name: "Cheeseburger", price: 8},{name: "Veggie Burger", price: 7}],
+    sides: [{name: "Fries", price: 3},{name: "Onion Rings", price: 4}],
+    drinks: [{name: "Coke", price: 2},{name: "Water", price: 1.5}]
+};
+let cart = [];
+let currentTab = 'combo';
+
+function renderMenu(filter="") {
+    const container = document.getElementById("menu-container");
+    container.innerHTML = "";
+    let itemsToShow = [];
+
+    if(filter.trim() === "") {
+        itemsToShow = menu[currentTab].map(item => ({...item, category: currentTab}));
+    } else {
+        for(const cat in menu) {
+            menu[cat].forEach(item => {
+                if(item.name.toLowerCase().includes(filter.toLowerCase())) {
+                    itemsToShow.push({...item, category: cat});
+                }
+            });
+        }
+    }
+
+    if(itemsToShow.length === 0) {
+        container.innerHTML = `<div class="no-results">No results found!</div>`;
+        return;
+    }
+
+    itemsToShow.forEach(item => {
+        const div = document.createElement("div");
+        div.className = "menu-item";
+        div.innerHTML = `<h4>${item.name}</h4><p>Price: $${item.price.toFixed(2)}</p>
+        <button onclick="addToCart('${item.name}', ${item.price})">Order</button>`;
+        container.appendChild(div);
+    });
+}
+
+function addToCart(name, price) {
+    cart.push({name, price});
+    updateCart();
+}
+
+function updateCart() {
+    const cartItems = document.getElementById("cart-items");
+    cartItems.innerHTML = "";
+    cart.forEach(item => {
+        const div = document.createElement("div");
+        div.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+        cartItems.appendChild(div);
+    });
+    const total = cart.reduce((sum, item) => sum + item.price, 0);
+    document.getElementById("cart-total").textContent = `Total: $${total.toFixed(2)}`;
+}
+
+document.getElementById("checkout-btn").addEventListener("click", () => {
+    if(cart.length === 0) { alert("Your cart is empty!"); return; }
+    const modal = document.getElementById("checkout-modal");
+    const modalItems = document.getElementById("modal-items");
+    const modalTotal = document.getElementById("modal-total");
+    modalItems.innerHTML = "";
+    cart.forEach(item => {
+        const div = document.createElement("div");
+        div.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+        modalItems.appendChild(div);
+    });
+    const total = cart.reduce((sum, item) => sum + item.price, 0);
+    modalTotal.textContent = `Total: $${total.toFixed(2)}`;
+    modal.style.display = "block";
+});
+
+document.getElementById("close-modal").addEventListener("click", () => {
+    document.getElementById("checkout-modal").style.display = "none";
+    cart = [];
+    updateCart();
+});
+
+const tabButtons = document.querySelectorAll(".tab-button");
+tabButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        tabButtons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        currentTab = btn.getAttribute("data-tab");
+        if(document.getElementById("search-input").value === "") renderMenu();
+    });
+});
+
+document.getElementById("search-input").addEventListener("input", e => {
+    renderMenu(e.target.value);
+});
+
+document.getElementById("sort-select").addEventListener("change", e => {
+    const sortType = e.target.value;
+    let items = [];
+    const searchValue = document.getElementById("search-input").value.toLowerCase();
+    if(searchValue) {
+        for(const cat in menu) {
+            menu[cat].forEach(item => {
+                if(item.name.toLowerCase().includes(searchValue)) items.push({...item, category: cat});
+            });
+        }
+    } else {
+        items = menu[currentTab].map(item => ({...item, category: currentTab}));
+    }
+    if(sortType === "asc") items.sort((a,b)=> a.price - b.price);
+    else if(sortType === "desc") items.sort((a,b)=> b.price - a.price);
+
+    const container = document.getElementById("menu-container");
+    container.innerHTML = "";
+    if(items.length === 0) { container.innerHTML = `<div class="no-results">No results found!</div>`; return; }
+    items.forEach(item => {
+        const div = document.createElement("div");
+        div.className = "menu-item";
+        div.innerHTML = `<h4>${item.name}</h4><p>Price: $${item.price.toFixed(2)}</p>
+        <button onclick="addToCart('${item.name}', ${item.price})">Order</button>`;
+        container.appendChild(div);
+    });
+});
+
+
+renderMenu();
