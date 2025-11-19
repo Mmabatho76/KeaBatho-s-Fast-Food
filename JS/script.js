@@ -19,4 +19,11 @@ accordionButtons.forEach(btn => {
   })
 })
 
+ // Close other accordions
+    document.querySelectorAll(".accordion-content").forEach(c => {
+      if (c !== content) {
+        c.classList.remove("open");
+        c.style.maxHeight = null;
+      }
+    });
 
