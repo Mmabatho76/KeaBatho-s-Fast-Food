@@ -109,6 +109,9 @@ Key Features Referenced from Code
 
     Responsive Design – Media queries for navigation, image (.img), and text responsiveness.
 
+    Implementation
+    
+
 Notes:
 
     Some images are placeholders and can be replaced with your own.
@@ -144,6 +147,47 @@ v1.1.0 – Latest Update (2025-09-26)
     Added responsive CSS styling
     
     For part 1 an empty ReadMe file was submitted but now my readme file has info
+
+    
+        v1.2.0 (2025-11-19)
+
+        Added
+        Implemented essential SEO elements, including a descriptive title tag (<title>) and meta tags for description, keywords, and author.
+        Created a responsive navigation bar with links to Home, About, Services, Product, Enquiry, and Contact pages.
+        Added a Hero section with a welcome message and a brief introduction to the business.
+        Included a logo and a main image (IMAGE.jpg) in the header section.
+        Incorporated two clear Call to Action (CTA) sections: "View Our Menu" and "Make an Enquiry".
+        Included a footer with social media icons for Facebook, Instagram, and Twitter (links are placeholders).
+        Added external CSS link for styles.css and a CDN link for Font Awesome icons.
+        Implemented and documented changes/improvements based on part 2 feedback.
+        - Implemented & documented Javascript interactive elements(accordions, tabs, modals, etc...)
+        - Implemented and documented interactive (Google) map.
+        - Implemented and documented Gallery lightbox.
+        - Implemented and documented dynamic (real-time) content.
+        - Implemented the search feature.
+        - Implemented SEO title tags.
+        - Implemented SEO meta tags (keywords,  description)
+        *Enquiry form* with Javascript input validation and user feedback.
+        - *Contact form* with Javascript input validation, *email recipient processing* and feedback.
+        - Record of multiple gitHub commits.
+        - Added a JavaScript fle
+
+
+        Created a new scripts.js file to handle frontend interactivity.
+Implemented a functional Hamburger Menu script for mobile navigation.
+Added an Accordion script to manage collapsible content sections (requires corresponding HTML/CSS).
+Introduced a Lightbox script for image popups (requires corresponding HTML/CSS).
+Added Back to Top button functionality for smooth page scrolling.
+Included a utility function to display and continuously update a real-time timestamp on the page (requires a <p id="timestamp"> element).
+Added comprehensive client-side form validation logic (validateForm()) using JavaScript, including error message display and success message handling on the page.
+Included basic, alternative form validation functions (Main() and submitEnquiry()) using alert() for user feedback.
+
+        Changed
+        The overall structure is a single HTML page (index.html).
+        Removed
+        (None, as this is the initial version)
+
+
 
     
     REFERENCES
