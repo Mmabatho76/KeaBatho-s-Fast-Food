@@ -6,6 +6,7 @@
   <title>KeaBatho's Fast Food — Our Services</title>
   <link rel="stylesheet" href="../Css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  
 </head>
 <body>
   <!-- Navbar -->
@@ -28,11 +29,16 @@
     <h1>Our Services</h1>
     <p>Explore our delicious meals and services designed to satisfy your cravings.</p>
 
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search services, menu items or FAQs..." onkeyup="searchItems()">
+    </div>
+
     <!-- Dine-In & Takeaway -->
     <section id="dine-in-takeaway">
       <h2>Dine-In & Takeaway</h2>
 
-      <div class="service-box">
+      <div class="service-box" data-name="Dine-In">
         <img src="../Assets/DINE IN.png" alt="Dine in at KeaBatho's Fast Food">
         <div>
           <h3>Dine-In</h3>
@@ -40,16 +46,18 @@
         </div>
       </div>
 
+      <div class="service-box" data-name="Takeaway">
         <div>
           <h3>Takeaway</h3>
           <p>Order at the counter or by phone and pick up in minutes with fresh, hot packaging.</p>
         </div>
+      </div>
     </section>
 
     <!-- Specials & Combos -->
     <section id="combos">
       <h2>Weekly Specials & Combos</h2>
-      <div class="service-box">
+      <div class="service-box" data-name="Combos">
         <img src="../Assets/Burger Buddy.jpg" alt="Combo meals special">
         <div>
           <p>Great value bundles updated every Monday.</p>
@@ -61,33 +69,32 @@
     <!-- Operating Hours -->
     <section id="hours">
       <h2>Operating Hours</h2> 
-        <div>
-          <table summary="Operating hours by day">
-            <thead>
-              <tr>
-                <th>Day</th>
-                <th>Hours</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>Monday</td><td>10:00 - 22:00</td></tr>
-              <tr><td>Tuesday</td><td>10:00 - 22:00</td></tr>
-              <tr><td>Wednesday</td><td>10:00 - 22:00</td></tr>
-              <tr><td>Thursday</td><td>10:00 - 22:00</td></tr>
-              <tr><td>Friday</td><td>10:00 - 23:00</td></tr>
-              <tr><td>Saturday</td><td>10:00 - 23:00</td></tr>
-              <tr><td>Sunday</td><td>11:00 - 21:00</td></tr>
-            </tbody>
-          </table>
-          <p><em>Public holidays may differ—please call to confirm.</em></p>
-        </div>
-      
+      <div class="service-box" data-name="Operating Hours">
+        <table summary="Operating hours by day">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Monday</td><td>10:00 - 22:00</td></tr>
+            <tr><td>Tuesday</td><td>10:00 - 22:00</td></tr>
+            <tr><td>Wednesday</td><td>10:00 - 22:00</td></tr>
+            <tr><td>Thursday</td><td>10:00 - 22:00</td></tr>
+            <tr><td>Friday</td><td>10:00 - 23:00</td></tr>
+            <tr><td>Saturday</td><td>10:00 - 23:00</td></tr>
+            <tr><td>Sunday</td><td>11:00 - 21:00</td></tr>
+          </tbody>
+        </table>
+        <p><em>Public holidays may differ—please call to confirm.</em></p>
+      </div>
     </section>
 
     <!-- How to Order -->
     <section id="ordering">
       <h2>How to Order</h2>
-      
+      <div class="service-box" data-name="Ordering">
         <img src="../Assets/customer ordering food.jpg" alt="Customer ordering food">
         <div>
           <ol>
@@ -99,44 +106,46 @@
           </ol>
           <p><strong>Phone/WhatsApp:</strong> 071-000-0000</p>
         </div>
-     
+      </div>
     </section>
 
     <!-- FAQs -->
     <section id="faqs">
       <h2>Frequently Asked Questions</h2>
-        <div>
-          <details>
-            <summary>Do you have vegetarian options?</summary>
-            <p>Yes—veggie burgers, chips, salads, and custom bowls. Ask for meat-free gravy and separate prep.</p>
-          </details>
-          <details>
-            <summary>Are your products Halaal-friendly?</summary>
-            <p>We source from Halaal-certified suppliers where possible and avoid cross-contamination. Please ask if you have specific requirements.</p>
-          </details>
-          <details>
-            <summary>Can I pre-order for a specific time?</summary>
-            <p>Yes. Place your order at least 30 minutes in advance and tell us your collection time.</p>
-          </details>
-        </div>
+      <div>
+        <details data-name="Vegetarian Options">
+          <summary>Do you have vegetarian options?</summary>
+          <p>Yes—veggie burgers, chips, salads, and custom bowls. Ask for meat-free gravy and separate prep.</p>
+        </details>
+        <details data-name="Halaal">
+          <summary>Are your products Halaal-friendly?</summary>
+          <p>We source from Halaal-certified suppliers where possible and avoid cross-contamination. Please ask if you have specific requirements.</p>
+        </details>
+        <details data-name="Pre-order">
+          <summary>Can I pre-order for a specific time?</summary>
+          <p>Yes. Place your order at least 30 minutes in advance and tell us your collection time.</p>
+        </details>
+      </div>
     </section>
 
     <!-- Ready to Order -->
     <section id="order">
       <h2>Ready to Order?</h2>
       <p>Call us at <strong>+27 89 321 6789</strong> or email <strong>orders@keabathofoods.com</strong>.</p>
-      <a href="tel:+27 89 321 6789" class="btn">Call Now</a>
+      <a href="tel:+27893216789" class="btn">Call Now</a>
     </section>
   </main>
 
   <!-- Footer -->
   <footer>
-   <div class="socials">
-                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
+    <div class="socials">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
     <p>&copy; 2025 KeaBatho's Fast Food</p>
   </footer>
+<script src="../JS/script.js"></script>
+  
 </body>
 </html>

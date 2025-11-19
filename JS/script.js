@@ -456,3 +456,41 @@ document.getElementById("sort-select").addEventListener("change", e => {
 
 
 renderMenu();
+
+
+
+
+
+//-- Search Script ---
+  
+    function searchItems() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const items = document.querySelectorAll('.service-box, #faqs details');
+      let found = false;
+
+      items.forEach(item => {
+        const name = item.getAttribute('data-name')?.toLowerCase() || '';
+        if(name.includes(input)) {
+          item.style.display = 'block';
+          found = true;
+        } else {
+          item.style.display = 'none';
+        }
+      });
+
+      // Show "No results found" if nothing matches
+      if(!found && input !== '') {
+        if(!document.getElementById('noResults')) {
+          const p = document.createElement('p');
+          p.id = 'noResults';
+          p.style.color = 'red';
+          p.style.fontWeight = 'bold';
+          p.textContent = 'No results found!';
+          document.querySelector('main').prepend(p);
+        }
+      } else {
+        const noResults = document.getElementById('noResults');
+        if(noResults) noResults.remove();
+      }
+    }
+ 

@@ -952,3 +952,49 @@ input:focus, select:focus, textarea:focus {
 
 /* No results */
 .no-results { text-align: center; width: 100%; font-weight: bold; margin-top: 20px; }
+
+
+
+
+
+/* Search Bar Styles */
+    .search-container {
+      margin: 20px 0;
+    }
+
+    #searchInput {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    /* Optional: Highlight menu items */
+    .service-box {
+      padding: 10px;
+      margin-bottom: 15px;
+      background: #f8f8f8;
+      border-radius: 8px;
+    }
+
+    .service-box img {
+      max-width: 150px;
+      border-radius: 8px;
+      margin-right: 15px;
+    }
+
+    .service-box div {
+      display: inline-block;
+      vertical-align: top;
+      max-width: 80%;
+    }
+
+    details {
+      margin-bottom: 10px;
+    }
+
+    #noResults {
+      color: red;
+      font-weight: bold;
+    }

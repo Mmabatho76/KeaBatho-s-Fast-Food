@@ -175,7 +175,8 @@ v1.1.0 – Latest Update (2025-09-26)
         - *Contact form* with Javascript input validation, *email recipient processing* and feedback.
         - Record of multiple gitHub commits.
         - Added a JavaScript fle
-        - All pages consist of a Javascript link or a link that will help them access the JS code
+        - All pages consist of a Javascript link or a link that will help them access the JS code.
+        -There is a search filter at the Service Page 
 
 
         Created a new scripts.js file to handle frontend interactivity.
