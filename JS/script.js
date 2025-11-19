@@ -27,3 +27,13 @@ accordionButtons.forEach(btn => {
       }
     });
 
+// Toggle current accordion
+    if (content.classList.contains("open")) {
+      content.classList.remove("open");
+      content.style.maxHeight = null;
+    } else {
+      content.classList.add("open");
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  
+
