@@ -161,29 +161,7 @@ v1.1.0 – Latest Update (2025-09-26)
 
         Added
         Implemented essential SEO elements, including a descriptive title tag (<title>) and meta tags for description, keywords, and author.
-        Created a responsive navigation bar with links to Home, About, Services, Product, Enquiry, and Contact pages.
-        Added a Hero section with a welcome message and a brief introduction to the business.
-        Included a logo and a main image (IMAGE.jpg) in the header section.
-        Incorporated two clear Call to Action (CTA) sections: "View Our Menu" and "Make an Enquiry".
-        Included a footer with social media icons for Facebook, Instagram, and Twitter (links are placeholders).
-        Added external CSS link for styles.css and a CDN link for Font Awesome icons.
-        Implemented and documented changes/improvements based on part 2 feedback.
-        - Implemented & documented Javascript interactive elements(accordions, tabs, modals, etc...)
-        - Implemented and documented interactive (Google) map.
-        - Implemented and documented Gallery lightbox.
-        - Implemented and documented dynamic (real-time) content.
-        - Implemented the search feature.
-        - Implemented SEO title tags.
-        - Implemented SEO meta tags (keywords,  description)
-        *Enquiry form* with Javascript input validation and user feedback.
-        - *Contact form* with Javascript input validation, *email recipient processing* and feedback.
-        - Record of multiple gitHub commits.
-        - Added a JavaScript fle
-        - All pages consist of a Javascript link or a link that will help them access the JS code.
-        -There is a search filter at the Service Page 
-
-
-        Created a new scripts.js file to handle frontend interactivity.
+     Created a new scripts.js file to handle frontend interactivity.
 Implemented a functional Hamburger Menu script for mobile navigation.
 Added an Accordion script to manage collapsible content sections (requires corresponding HTML/CSS).
 Introduced a Lightbox script for image popups (requires corresponding HTML/CSS).
@@ -192,30 +170,60 @@ Included a utility function to display and continuously update a real-time times
 Added comprehensive client-side form validation logic (validateForm()) using JavaScript, including error message display and success message handling on the page.
 Included basic, alternative form validation functions (Main() and submitEnquiry()) using alert() for user feedback.
 
-        Changed
-        The overall structure is a single HTML page (index.html).
-        Removed
-        (None, as this is the initial version)
+        
 
 
 
     
     REFERENCES
     
-    Ocean5Strategies 8 Technical Elements of Website Design and Development | Ocean 5 Strategies
-    (Accessed 07 August 2025)
-    
-    The IIE. 2012.Web Development (Introduction) (WEDE5020 Module Manual). The Independent
-    Institute of Education: Unpublished.
-    
-    Nulab 16 timeline examples (plus tips) | Nulab (Accessed 06 August 2025)
-    
-    BoomDevs What Are the Technical Requirements for a Website? - BoomDevs LLC (Accessed 06
-    August 2025)
-    
-    W3Schools https://www.w3schools.com/html/html_attributes.asp( Accessed 20 August
-    2025)
-    W3C. (2024).HTML5 Specification. https://html.spec.whatwg.org/multipage/( Accessed 12
-    August 2025)
+    Ocean5Strategies. 8 Technical Elements of Website Design and Development. (Accessed 07 August 2025)
 
-    W3School https://www.w3schools.com/css/default.asp accessed 23 September 2025
+    The IIE. Web Development (Introduction) WEDE5020 Module Manual. 2012
+
+    Nulab. 16 Timeline Examples and Tips. (Accessed 06 August 2025)
+
+    BoomDevs LLC. Technical Requirements for a Website. (Accessed 06 August 2025)
+
+    W3Schools. HTML5 Attributes
+    (Accessed 20 August 2025)
+
+    W3C. HTML5 Specification (2024). Link
+
+    W3Schools. CSS Default
+    (Accessed 23 September 2025)
+
+    MDN Web Docs. HTML: Hypertext Markup Language
+    (Accessed 15 September 2025)
+
+    MDN Web Docs. CSS: Cascading Style Sheets
+    (Accessed 15 September 2025)
+
+    MDN Web Docs. JavaScript Guide
+    (Accessed 18 September 2025)
+
+    Google Developers. Responsive Web Design Basics
+    (Accessed 20 September 2025)
+
+    W3Schools. JavaScript Form Validation
+    (Accessed 21 September 2025)
+
+    Moz. On-Page SEO: The Beginner’s Guide
+    (Accessed 10 October 2025)
+
+    Font Awesome. Font Awesome Icons
+    (Accessed 05 August 2025)
+
+    CSS-Tricks. A Complete Guide to Flexbox
+    (Accessed 22 September 2025)
+
+    CSS-Tricks. A Complete Guide to Grid
+    (Accessed 22 September 2025)
+
+    W3Schools. Media Queries for Responsive Design
+    (Accessed 23 September 2025)
+
+    Google Developers. SEO Starter Guide
+    (Accessed 12 October 2025)
+
+        
