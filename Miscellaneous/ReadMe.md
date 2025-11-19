@@ -110,7 +110,11 @@ Key Features Referenced from Code
     Responsive Design – Media queries for navigation, image (.img), and text responsiveness.
 
     Implementation
-    
+    -Real time and date is the top of the about us page
+    -Accordions are at the about page 
+    -JavaScript Validation is implemented in the enquiry and contact page...
+    -Enquiry page: After the user has inputed their details and  there will be a pop-up message to let them know their equiry has been submitted 
+    -Contact page: After the user has inputed their details , there will be a pop-up message to let them know their equiry has been submitted and the contact page will lead or land them to outlook/gmail.
 
 Notes:
 
@@ -171,6 +175,7 @@ v1.1.0 – Latest Update (2025-09-26)
         - *Contact form* with Javascript input validation, *email recipient processing* and feedback.
         - Record of multiple gitHub commits.
         - Added a JavaScript fle
+        - All pages consist of a Javascript link or a link that will help them access the JS code
 
 
         Created a new scripts.js file to handle frontend interactivity.
