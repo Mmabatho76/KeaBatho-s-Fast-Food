@@ -226,3 +226,35 @@ function Main(){
     alert("Your form was submitted successfully!!!");
     return true;
 }
+
+
+//----Enquiry Form------
+function submitEnquiry() {
+    const fullname = document.getElementById('fullname').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const enquiryType = document.getElementById('enquiryType').value;
+    const message = document.getElementById('message').value.trim();
+    const errorMessage = document.getElementById('errorMessage');
+
+    errorMessage.textContent = '';
+
+    if (!fullname || !email || !enquiryType || !message) {
+        errorMessage.textContent = "All fields are required!";
+        return false;
+    }
+
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!email.match(emailPattern)) {
+        errorMessage.textContent = "Invalid email format!";
+        return false;
+    }
+
+    document.getElementById('info').innerText =
+        `Full Name: ${fullname}\nEmail: ${email}\nEnquiry Type: ${enquiryType}\nMessage:\n${message}\n\nWe will respond with information regarding availability, cost, or sponsorship opportunities.`;
+
+    alert("Enquiry submitted successfully!");
+
+    return false; // prevent page reload
+}
+
+
