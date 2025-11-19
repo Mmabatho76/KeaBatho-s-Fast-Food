@@ -10,3 +10,13 @@ if (hamburger && navLinks) {
   });
 }
 
+// ---------------- ACCORDION ----------------
+const accordionButtons = document.querySelectorAll(".accordion-btn");
+
+accordionButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const content = btn.nextElementSibling;
+  })
+})
+
+
