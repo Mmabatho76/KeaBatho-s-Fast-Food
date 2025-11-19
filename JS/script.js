@@ -35,6 +35,7 @@ accordionButtons.forEach(btn => {
   });
 });
 
+
 // ---------------- LIGHTBOX ----------------
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightboxImg");
@@ -255,6 +256,31 @@ function submitEnquiry() {
     alert("Enquiry submitted successfully!");
 
     return false; // prevent page reload
+}
+
+//---For messages---//
+function validateContactForm() {
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+    const errorMessage = document.getElementById('errorMessage');
+    const info = document.getElementById('info');
+
+    errorMessage.textContent = '';
+    info.textContent = '';
+
+    // Validate message
+    if (message.length < 10) {
+        errorMessage.textContent = "Message must be at least 10 characters long!";
+        return false;
+    }
+
+    // Optionally display user input under the form
+    info.textContent = `Name: ${name}\nEmail: ${email}\nMessage:\n${message}`;
+
+    alert("Your message has been validated successfully!");
+
+    return false; // Prevent form submission for demonstration
 }
 
 
