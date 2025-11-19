@@ -284,3 +284,43 @@ function validateContactForm() {
 }
 
 
+
+
+
+//---for messages---
+function validateContactForm() {
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+    const errorMessage = document.getElementById('errorMessage');
+    const info = document.getElementById('info');
+
+    errorMessage.textContent = '';
+    info.textContent = '';
+
+    // Validate message length
+    if (message.length < 10) {
+        errorMessage.textContent = "Message must be at least 10 characters long!";
+        return false;
+    }
+
+    // Validate email format
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!email.match(emailPattern)) {
+        errorMessage.textContent = "Invalid email format!";
+        return false;
+    }
+
+    // Display user input under form
+    info.textContent = `Name: ${name}\nEmail: ${email}\nMessage:\n${message}`;
+
+    // Prepare mailto link
+    const websiteEmail = "info@keabathosfastfood.co.za"; // Replace with your website email
+    const subject = encodeURIComponent(`Contact Form Message from ${name}`);
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage:\n${message}`);
+
+    // Open email client (Gmail, Outlook, etc.)
+    window.location.href = `mailto:${websiteEmail}?subject=${subject}&body=${body}`;
+
+    return false; // Prevent actual form submission
+}
