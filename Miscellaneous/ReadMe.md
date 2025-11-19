@@ -83,6 +83,7 @@ Usage Instructions(option 1)
 
     Replace images in the Assets folder as needed.
 
+
 How to Use (option 2):
 
     Open the website by opening index.html in a modern web browser.
@@ -115,6 +116,9 @@ Key Features Referenced from Code
     -JavaScript Validation is implemented in the enquiry and contact page...
     -Enquiry page: After the user has inputed their details and  there will be a pop-up message to let them know their equiry has been submitted 
     -Contact page: After the user has inputed their details , there will be a pop-up message to let them know their equiry has been submitted and the contact page will lead or land them to outlook/gmail.
+    -Added an icon to help a user go up when clicked on it , it is at the about us page
+    -ANIMATIONS
+    
 
 Notes:
 
